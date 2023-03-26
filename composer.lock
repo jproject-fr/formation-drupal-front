@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb28542b57b4938cc90eb1d3199a9780",
+    "content-hash": "207e39e4f1a6a0953a1db6667b1270cb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -796,6 +796,86 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/advagg",
+            "version": "6.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/advagg.git",
+                "reference": "6.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/advagg-6.0.0-alpha1.zip",
+                "reference": "6.0.0-alpha1",
+                "shasum": "cadfe490b2b0c3fe099087f1c767ab7eaa73160a"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "tubalmartin/cssmin": "^4.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.0.0-alpha1",
+                    "datestamp": "1672698356",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Carper (mikeytown2)",
+                    "homepage": "https://www.drupal.org/u/mikeytown2",
+                    "role": "Creator, Maintainer"
+                },
+                {
+                    "name": "Nick Wilde (nickwilde)",
+                    "homepage": "https://www.drupal.org/u/nickwilde",
+                    "email": "design@briarmoon.ca",
+                    "role": "Drupal 8 Port/maintainer"
+                },
+                {
+                    "name": "Other Contributors",
+                    "homepage": "https://www.drupal.org/node/1066416/committers",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "NickDickinsonWilde",
+                    "homepage": "https://www.drupal.org/user/3094661"
+                },
+                {
+                    "name": "rupl",
+                    "homepage": "https://www.drupal.org/user/411999"
+                },
+                {
+                    "name": "thalles",
+                    "homepage": "https://www.drupal.org/user/3589086"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                }
+            ],
+            "description": "Improved aggregation of CSS/JS files to speed up page load times.",
+            "homepage": "https://drupal.org/project/advagg",
+            "support": {
+                "source": "https://git.drupalcode.org/project/advagg",
+                "issues": "https://drupal.org/project/issues/advagg",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -1636,6 +1716,121 @@
             }
         },
         {
+            "name": "drupal/tracer",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tracer.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tracer-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "f7566d58cbc422489fc7ee8bb9f8e4bb210cc017"
+            },
+            "require": {
+                "drupal/core": "^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1648709892",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "lussoluca",
+                    "homepage": "https://www.drupal.org/user/138068"
+                }
+            ],
+            "description": "Alter core services to allow to trace them.",
+            "homepage": "https://www.drupal.org/project/tracer",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tracer"
+            }
+        },
+        {
+            "name": "drupal/webprofiler",
+            "version": "10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webprofiler.git",
+                "reference": "10.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webprofiler-10.0.0.zip",
+                "reference": "10.0.0",
+                "shasum": "9360fc5a83b7a083c84816cb250601497bd0bd1a"
+            },
+            "require": {
+                "drupal/core": "^10",
+                "drupal/devel": "*",
+                "drupal/tracer": "*",
+                "nette/php-generator": "^4.0",
+                "nikic/php-parser": "~4.0",
+                "php": ">=8.1.0",
+                "symfony/stopwatch": "^6",
+                "symfony/var-dumper": "^6"
+            },
+            "require-dev": {
+                "mglaman/phpstan-drupal": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "10.0.0",
+                    "datestamp": "1671004733",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^10"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Luca Lusso",
+                    "homepage": "https://www.drupal.org/user/436000",
+                    "email": "lussoluca@gmail.com"
+                },
+                {
+                    "name": "drupalspoons",
+                    "homepage": "https://www.drupal.org/user/3647684"
+                },
+                {
+                    "name": "lussoluca",
+                    "homepage": "https://www.drupal.org/user/138068"
+                }
+            ],
+            "description": "Extract, collect, store and display profiling information for Drupal.",
+            "homepage": "https://www.drupal.org/project/webprofiler",
+            "support": {
+                "source": "https://gitlab.com/drupalspoons/webprofiler",
+                "issues": "https://gitlab.com/drupalspoons/webprofiler/-/issues",
+                "slack": "https://app.slack.com/client/T06GX3JTS/C034XBTCHV0"
+            }
+        },
+        {
             "name": "egulias/email-validator",
             "version": "3.2.5",
             "source": {
@@ -2101,6 +2296,218 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.7.6"
             },
             "time": "2022-08-18T16:18:26+00:00"
+        },
+        {
+            "name": "nette/php-generator",
+            "version": "v4.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/php-generator.git",
+                "reference": "0f1275bb8d39b3eb92b57c22a51fe693f1f145a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/0f1275bb8d39b3eb92b57c22a51fe693f1f145a5",
+                "reference": "0f1275bb8d39b3eb92b57c22a51fe693f1f145a5",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^3.2.9 || ^4.0",
+                "php": ">=8.0 <8.3"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "dev-master",
+                "nette/tester": "^2.4",
+                "nikic/php-parser": "^4.15",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.8"
+            },
+            "suggest": {
+                "nikic/php-parser": "to use ClassType::from(withBodies: true) & ClassType::fromCode()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 8.2 features.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "code",
+                "nette",
+                "php",
+                "scaffolding"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/php-generator/issues",
+                "source": "https://github.com/nette/php-generator/tree/v4.0.6"
+            },
+            "time": "2023-03-13T17:38:30+00:00"
+        },
+        {
+            "name": "nette/utils",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "cacdbf5a91a657ede665c541eda28941d4b09c1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/cacdbf5a91a657ede665c541eda28941d4b09c1e",
+                "reference": "cacdbf5a91a657ede665c541eda28941d4b09c1e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0 <8.3"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "dev-master",
+                "nette/tester": "^2.4",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::webalize(), toAscii(), chr() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()",
+                "ext-xml": "to use Strings::length() etc. when mbstring is not available"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.0.0"
+            },
+            "time": "2023-02-02T10:41:53+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v4.15.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/nikic/PHP-Parser/issues",
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
+            },
+            "time": "2023-03-05T19:49:14+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -4501,6 +4908,68 @@
             "time": "2023-03-01T10:32:47+00:00"
         },
         {
+            "name": "symfony/stopwatch",
+            "version": "v6.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/stopwatch.git",
+                "reference": "f3adc98c1061875dd2edcd45e5b04e63d0e29f8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/f3adc98c1061875dd2edcd45e5b04e63d0e29f8f",
+                "reference": "f3adc98c1061875dd2edcd45e5b04e63d0e29f8f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/service-contracts": "^1|^2|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Stopwatch\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides a way to profile code",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/stopwatch/tree/v6.2.7"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-02-14T08:44:56+00:00"
+        },
+        {
             "name": "symfony/string",
             "version": "v6.2.7",
             "source": {
@@ -5010,6 +5479,63 @@
                 }
             ],
             "time": "2023-02-16T09:57:23+00:00"
+        },
+        {
+            "name": "tubalmartin/cssmin",
+            "version": "v4.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "cogpowered/finediff": "0.3.*",
+                "phpunit/phpunit": "4.8.*"
+            },
+            "bin": [
+                "cssmin"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tubalmartin\\CssMin\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Túbal Martín",
+                    "homepage": "http://tubalmartin.me/"
+                }
+            ],
+            "description": "A PHP port of the YUI CSS compressor",
+            "homepage": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port",
+            "keywords": [
+                "compress",
+                "compressor",
+                "css",
+                "cssmin",
+                "minify",
+                "yui"
+            ],
+            "support": {
+                "issues": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/issues",
+                "source": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port"
+            },
+            "time": "2018-01-15T15:26:51+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -6137,62 +6663,6 @@
             "time": "2021-11-16T10:29:06+00:00"
         },
         {
-            "name": "nikic/php-parser",
-            "version": "v4.15.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
-                "reference": "6bb5176bc4af8bcb7d926f88718db9b96a2d4290",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "ircmaxell/php-yacc": "^0.0.7",
-                "phpunit/phpunit": "^6.5 || ^7.0 || ^8.0 || ^9.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.9-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpParser\\": "lib/PhpParser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov"
-                }
-            ],
-            "description": "A PHP parser written in PHP",
-            "keywords": [
-                "parser",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
-            },
-            "time": "2023-03-05T19:49:14+00:00"
-        },
-        {
             "name": "phootwork/collection",
             "version": "v3.2.1",
             "source": {
@@ -6761,6 +7231,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/advagg": 15,
         "drupal/gin": 5,
         "drupal/gin_toolbar": 5
     },
