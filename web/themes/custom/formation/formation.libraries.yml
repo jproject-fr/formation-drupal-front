@@ -2,6 +2,7 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
+    js/formation.js: {attributes: { async: true} }
   css:
     component:
       css/style.css: {}
