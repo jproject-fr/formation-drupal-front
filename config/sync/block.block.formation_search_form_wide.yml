@@ -1,0 +1,23 @@
+uuid: 0b8d382f-a3fa-4c98-ac7a-1e23bd69d535
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - formation
+_core:
+  default_config_hash: RgsQ7Qiq1rVMYdc6mUeaQrX1MSHaQM-lTho5lLHRy4Y
+id: formation_search_form_wide
+theme: formation
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

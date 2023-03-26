@@ -1,0 +1,23 @@
+uuid: c0139162-f83b-4fc6-975d-8cb9ba26f076
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - formation
+_core:
+  default_config_hash: 2YpQQHZJKcFIXvzWFBxEHehn0rijxCXfXFYC0q7plQU
+id: formation_search_form_narrow
+theme: formation
+region: sidebar_first
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

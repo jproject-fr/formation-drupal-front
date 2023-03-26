@@ -1,0 +1,20 @@
+uuid: 3cb2baa5-c7d9-4b31-87e5-4b69f0983648
+langcode: en
+status: true
+dependencies:
+  theme:
+    - formation
+_core:
+  default_config_hash: iTrvchPqqn0MsQFWD06gdOkS0FHs-kWAUzwC4785Zes
+id: formation_page_title
+theme: formation
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

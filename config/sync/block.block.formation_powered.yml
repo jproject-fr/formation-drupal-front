@@ -1,0 +1,22 @@
+uuid: 874004c3-1b86-42a8-bf98-866da0630ab2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - formation
+_core:
+  default_config_hash: gnuUMqQelzfs1AV56v5dPaJDXrBDRY1QeA7xa6g8g10
+id: formation_powered
+theme: formation
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

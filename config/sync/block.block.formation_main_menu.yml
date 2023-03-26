@@ -1,0 +1,27 @@
+uuid: e5625624-2340-43a8-939d-296b570139dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - formation
+_core:
+  default_config_hash: QajWXNh4L5vYCaAmbNrQHmrqhFTA3mZ_B0DINO_MPuA
+id: formation_main_menu
+theme: formation
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

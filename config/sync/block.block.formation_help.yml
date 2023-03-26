@@ -1,0 +1,22 @@
+uuid: 67a2c8ea-ab7c-433d-bf17-1b69ea57f11d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - formation
+_core:
+  default_config_hash: pKhxmd4U30hBZIWDqSaazGVKlugQBw5_g85QXdgfL7w
+id: formation_help
+theme: formation
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
