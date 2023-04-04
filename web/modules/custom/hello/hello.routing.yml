@@ -1,0 +1,7 @@
+hello.patterns:
+  path: '/hello/patterns'
+  defaults:
+    _title: 'Patterns'
+    _controller: '\Drupal\hello\Controller\PatternsController::content'
+  requirements:
+    _access: 'TRUE'

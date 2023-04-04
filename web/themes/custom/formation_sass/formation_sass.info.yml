@@ -10,6 +10,8 @@ libraries:
   - formation_sass/global-styling
 libraries-override:
   bootstrap_barrio/global-styling: false
+ui_patterns:
+  config_path: patterns.yml
 regions:
   top_header: 'Top header'
   top_header_form: 'Top header form'

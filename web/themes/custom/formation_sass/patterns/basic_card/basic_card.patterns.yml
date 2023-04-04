@@ -1,0 +1,46 @@
+
+basic_card:
+  label: 'Basic Card'
+  description: Basic Card Example.
+  variants:
+    default:
+      label: Default card
+      description: Default basic card example.
+    highlighted:
+      label: Highlighted basic card
+      description: Highlighted Basic Card.
+  fields:
+    title:
+      type: text
+      label: Card Title
+      description: Basic Card title .
+      preview: 'Basic Card Title'
+    body:
+      type: text
+      label: Card Body
+      preview: This is description of basic card body.
+    image:
+      type: image
+      label: card Image
+      description: Image of the Basic Card.
+      preview: <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"/>
+    author:
+      type: text
+      label: Author By
+      description: Basic Card Author
+      preview: Admin
+    date:
+      type: date
+      label: Author On
+      description: Publish date and time
+      preview: 18 may
+    url:
+      type: url
+      label: link
+      description: link to content
+  libraries:
+    -
+      basic_card:
+        css:
+          component:
+            css/basic-card.css: {}
