@@ -1,15 +1,15 @@
-uuid: 241fdae9-b0b6-4d23-8c8a-d04ae1d6581c
+uuid: c91e694e-a497-494b-aa90-ed8b4d627920
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: gquxiZ_0nCZLwMpXLS4eXDsjXCJf7a01jlP21Rwxk3w
-id: formation_breadcrumbs
-theme: formation
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: formation_sass_breadcrumbs
+theme: formation_sass
 region: breadcrumb
 weight: 0
 provider: null

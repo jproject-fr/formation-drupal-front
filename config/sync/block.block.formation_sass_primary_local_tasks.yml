@@ -1,15 +1,15 @@
-uuid: ade1fb64-c935-4eda-8bfc-51f64fe4c21b
+uuid: b826ef79-6740-4db8-8702-9aafe70d0031
 langcode: en
 status: true
 dependencies:
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: UxzmHNbw1PL-AnCjV-XGPZ4o2ctQlwJwaMmCzKPAw38
-id: formation_primary_local_tasks
-theme: formation
-region: content
-weight: -5
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: formation_sass_primary_local_tasks
+theme: formation_sass
+region: highlighted
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

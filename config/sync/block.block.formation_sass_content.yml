@@ -1,17 +1,17 @@
-uuid: 85986932-d091-48bf-9b3d-bc6b0d5ac300
+uuid: 6fd9a6d7-72a1-45ed-aa21-8228e644f90e
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: PTF-blkf_7_0BbxAozx_6jXPFqOHdqQ9dxPORs2vr00
-id: formation_content
-theme: formation
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: formation_sass_content
+theme: formation_sass
 region: content
-weight: -3
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

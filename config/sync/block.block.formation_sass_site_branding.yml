@@ -1,17 +1,17 @@
-uuid: e71d82fa-cf3f-4889-b362-c95d8dc13142
+uuid: 9e432900-5153-4348-b271-7b85c1dd2355
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: zTeuQHEyCf9PWMn4zwNOLFjPIEvjgbSXuiecV9l4X4w
-id: formation_site_branding
-theme: formation
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: formation_sass_site_branding
+theme: formation_sass
 region: header
-weight: -7
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:

@@ -1,17 +1,17 @@
-uuid: 67a2c8ea-ab7c-433d-bf17-1b69ea57f11d
+uuid: 5f477672-5ad5-4782-9e8a-80e0e30ecc29
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: pKhxmd4U30hBZIWDqSaazGVKlugQBw5_g85QXdgfL7w
-id: formation_help
-theme: formation
-region: highlighted
-weight: -2
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: formation_sass_help
+theme: formation_sass
+region: top_header
+weight: 0
 provider: null
 plugin: help_block
 settings:

@@ -4,10 +4,14 @@ status: true
 dependencies:
   config:
     - filter.format.restricted_html
+    - rest.resource.formation_node
+    - rest.resource.formation_node_list
   module:
     - comment
     - contact
     - filter
+    - media
+    - rest
     - search
     - system
 _core:
@@ -22,3 +26,7 @@ permissions:
   - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view media'
+  - 'restful get formation_node_list'
+  - 'administer rest resources'
+  - 'restful get formation_node'

@@ -1,0 +1,23 @@
+uuid: 0c9e54a2-06ee-4114-aaca-7b89eed83755
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - formation_sass
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: formation_sass_syndicate
+theme: formation_sass
+region: top_header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

@@ -1,17 +1,17 @@
-uuid: 6f0e1d84-c9cb-4206-be25-5c46b2663f8e
+uuid: 4c6b19da-4f7e-4559-baff-010b9bf466cc
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: jSgVy47EdXjZDfTnEBRLzSk__xECV68RFISt3BDu2Rs
-id: formation_messages
-theme: formation
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: formation_sass_messages
+theme: formation_sass
 region: highlighted
-weight: -6
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

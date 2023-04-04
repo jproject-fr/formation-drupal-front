@@ -1,17 +1,17 @@
-uuid: c0139162-f83b-4fc6-975d-8cb9ba26f076
+uuid: 783c15ef-bd55-4a4a-abfb-aa3af4ba2e5a
 langcode: en
 status: true
 dependencies:
   module:
     - search
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: 2YpQQHZJKcFIXvzWFBxEHehn0rijxCXfXFYC0q7plQU
-id: formation_search_form_narrow
-theme: formation
-region: sidebar_first
-weight: -7
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: formation_sass_search_form_narrow
+theme: formation_sass
+region: primary_menu
+weight: -4
 provider: null
 plugin: search_form_block
 settings:

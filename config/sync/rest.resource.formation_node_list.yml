@@ -1,0 +1,18 @@
+uuid: 365c1501-50c7-4605-8991-ea847d4d6db2
+langcode: en
+status: true
+dependencies:
+  module:
+    - formation_rest
+    - serialization
+    - user
+id: formation_node_list
+plugin_id: formation_node_list
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

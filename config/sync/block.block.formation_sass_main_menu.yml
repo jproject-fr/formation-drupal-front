@@ -1,4 +1,4 @@
-uuid: e5625624-2340-43a8-939d-296b570139dc
+uuid: 3b1d918a-7e51-46b6-b009-6e69c87bc716
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - formation
+    - formation_sass
 _core:
-  default_config_hash: QajWXNh4L5vYCaAmbNrQHmrqhFTA3mZ_B0DINO_MPuA
-id: formation_main_menu
-theme: formation
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: formation_sass_main_menu
+theme: formation_sass
 region: primary_menu
-weight: -6
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
