@@ -16,10 +16,14 @@ services:
 #      - /path/to/mariadb/data/on/host:/var/lib/mysql # Use bind mount
 
   php:
-    platform: linux/amd64
+    user: root
+    command: "php-fpm -R"
+
     image: wodby/drupal-php:$PHP_TAG
     container_name: "${PROJECT_NAME}_php"
     environment:
+      PHP_FPM_USER: root
+      PHP_FPM_GROUP: root
       SSMTP_MAILHUB: mailhog:1025
 #      SSMTP_MAILHUB: opensmtpd:25
       PHP_SENDMAIL_PATH: '"/usr/bin/dos2unix -u | /usr/sbin/ssmtp -t -f"'
@@ -60,7 +64,7 @@ services:
 
 
   nginx:
-    platform: linux/amd64
+#    platform: linux/amd64
     image: wodby/nginx:$NGINX_TAG
     container_name: "${PROJECT_NAME}_nginx"
     depends_on:
